@@ -1,0 +1,113 @@
+//====================================================================================================
+.header{
+    background-color: $color;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: rem(62);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+    &__login{
+        color: $white;
+        font-weight: 500;
+        position: relative;
+        transition: .2s;
+        &:hover{
+            text-decoration: rem(2) underline $white;
+
+        }
+        &::after{
+            content: '';
+            border-right: rem(2) solid #F2F2F2;
+            opacity: .3;
+            padding-left: rem(24);
+            margin-right: rem(24);
+        }
+    }
+    &__registr{
+        color: $white;
+        display: inline;
+        background: $blue;
+        padding: rem(14) rem(32);
+        border-radius: rem(32);
+        transition: .2s;
+        &:hover{
+            background-color: #212992;
+            transform: scale(1.05);
+            box-shadow: 0 rem(2) rem(30) #0c056d9a;
+        }
+    }
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        margin-right: rem(56);
+    }
+    &__item{
+        margin: 0 rem(16);
+        transition: .2s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+//========================================================================================================================================================
+.banner{
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+    &__info{
+        padding-top: rem(141);
+    }
+    &__sale{
+        margin-bottom: rem(24);
+        &-text{
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: rem(32);
+            padding: rem(12);
+            align-items: center;
+            width: rem(369);
+        }
+        &-75{
+            font-weight: 500;
+            color: $color;
+            background-color: $white;
+            border-radius: rem(32);
+            margin-right: rem(16);
+            padding: rem(6) rem(18);
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: rem(64);
+        line-height: rem(76);
+        margin-bottom: rem(24);
+    }
+    &__text{
+        line-height: rem(28);
+        color: $gray;
+        margin-bottom: rem(52);
+        max-width: rem(430);
+    }
+    &__link{
+        background-color: $blue;
+        padding: rem(20) rem(36);
+        border-radius: rem(32);
+        transition: .2s;
+        &:hover{
+            background-color: #212992;
+            transform: scale(1.05);
+            box-shadow: 0 rem(2) rem(30) #0c056d9a;
+        
+        }
+    }
+    &__image{
+        padding-top: rem(59);
+    }
+}
+
+//====================================================================================================
