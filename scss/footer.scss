@@ -1,0 +1,23 @@
+//====================================================================================================
+.footer{
+    background-color: $color;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        padding: rem(75) 0;
+
+    }
+    &__text{
+        line-height: rem(28);
+        color: $white;
+    }
+    &__link{
+        margin: 0 rem(16);
+        display: inline-block;
+        transition: .2s;
+        &:hover{
+            transform: scale(1.15);
+        }
+    }
+}
+//====================================================================================================

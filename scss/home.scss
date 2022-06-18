@@ -1,0 +1,325 @@
+//====================================================================================================
+body{
+    background-color: $color;
+}
+.advantages{
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $white;
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        padding-top: rem(199);
+        padding-bottom: rem(128);
+        width: rem(334);
+    }
+    &__text{
+        width: rem(334);
+        &-summ{
+            font-weight: 700;
+            font-size: rem(40);
+            line-height: 150%;
+        }
+        &-info{
+            line-height: rem(28);
+            color: $gray;
+        }
+    }
+    &__icon{
+        margin-right: rem(24);
+    }
+
+}
+
+.calc{
+    &__container{
+        text-align: center;
+    }
+    &__info{
+        padding-top: rem(100 );
+        text-align: center;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: rem(40);
+        line-height: 150%;
+        color: $white;
+        margin-bottom: rem(24);
+    }
+    &__text{
+        color: $white;
+        font-size: rem(18);
+        line-height: 150%;
+        max-width: rem(622);
+        display: inline-block;
+        margin-bottom: rem(59);
+    }
+    &__block{
+        background-color: $white;
+        max-width: rem(962);
+        align-items: center;
+        display: inline-block;
+        border-radius: rem(16);
+        padding: rem(0) rem(48);
+        margin-bottom: rem(90);
+    }
+    &__calculate{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: rem(942);
+        border-radius: rem(16) rem(16) 0 0;
+        background-color: $w;
+        margin-bottom: rem(95);
+        margin-top: rem(48);
+    }
+    &__input{
+        padding-left: rem(48);
+        border-bottom: rem(2) solid $gray;
+        width: rem(403);
+        height: rem(38);
+        padding: 0;
+        margin-right: rem(48);
+        outline: none;
+        font-size: rem(20);
+        line-height: 150%;
+        transition: .4s;
+        &::placeholder{
+            color: $mainColor;
+        }
+        &:active, &:focus, &:hover{
+            border-bottom: rem(2) solid $color;
+        }
+    }
+    &__sel{
+        border: none;
+        outline: none;
+        border-bottom: rem(2) solid $gray;
+        width: rem(205);
+        height: rem(38);
+        margin-right: rem(46);
+        font-size: rem(20);
+        line-height: 150%;
+        letter-spacing: 0.08em;
+        transition: .4s;
+        &:hover{
+            border-bottom: rem(2)solid $color;
+        }
+    }
+    &__button{
+        font-weight: 500;
+        font-size: rem(18);
+        line-height: 150%;
+        color: $white;
+        background-color: $blue;
+        padding: rem(16) rem(32);
+        border-radius: rem(32);
+        transition: .2s;
+        &:hover{
+            background-color: $scolor;
+            transform: scale(1.05);
+        }
+    }
+    &__result{
+        text-align: left;
+        &-text{
+            font-weight: 500;
+            line-height: 150%;
+            color: $blue;
+            margin-bottom: rem(16);
+        }
+        &-decription{
+            font-weight: 700;
+            font-size: rem(34);
+            line-height: 150%;
+        }
+        &-total{
+            color: $blue;
+
+        }
+        &-info{
+            line-height: rem(28);
+            color: $dgray;
+            margin-bottom: rem(26);
+        }
+    }
+}
+.crypto{
+    &__bg{
+        background: linear-gradient(180deg, #F8F9FB 0%, #FAFBFF 100%);
+    }
+    &__container{
+        text-align: center;
+    }
+    &__title{
+        padding-top: rem(100);
+        margin-bottom: rem(64);
+        font-weight: 700;
+        font-size: rem(40);
+        line-height: 150%;
+        color: $color;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: rem(100);
+    }
+    &-item{
+        margin-bottom: rem(45);
+        flex: 0 0 30%;
+        background-color: $white;
+        padding: rem(48) 0;
+        backdrop-filter: blur(rem(250));
+        border-radius: rem(16);
+        box-shadow: 0 rem(0.4) rem(20) #39177731;
+        transition: .3s;
+        &:hover{
+            background-color: $scolor;
+            box-shadow: 0 rem(0.4) rem(40)  #39177760;
+        }
+        &:hover .crypto-item__title, &:hover .crypto-item__text{
+            color: $white;
+    
+        }
+        &:hover .crypto-item__link-text{
+            width: rem(133);
+        }
+        &:hover .crypto-item__link{
+            background-color: $blue;
+        }
+        &:hover .crypto-item__link-icon{
+            transform: scale(0.6);
+            border: rem(1) solid $white;
+        }
+        &__img{
+            margin-bottom: rem(48);
+        }
+        &__title{
+            margin-bottom: rem(16);
+            font-weight: 700;
+            font-size: rem(32);
+            line-height: 150%;
+            transition: .2s;
+        }
+        &__type{
+            font-weight: 500;
+            font-size: rem(18);
+            line-height: 150%;
+            color: $crypt;
+            
+        }
+        &__text{
+            display: inline-block;
+            margin-bottom: rem(40);
+            max-width: rem(322);
+            color: $dgray;
+            transition: .1s;
+        }
+        &__link{
+            margin-bottom: rem(48);
+            background-color: $white;
+            color: $white;
+            padding: rem(0) rem(15);
+            border-radius: rem(32);
+            font-size: rem(18);
+            border-radius: rem(32);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: rem(205);
+            margin: 0 auto;
+            transition: .3s;
+            &-text{
+                font-size: rem(18);
+                font-weight: 500;
+                width: 0;
+                transition: .3s;
+            }
+            &-icon{
+                background-color: $white;
+                width: rem(64);
+                height: rem(64);
+                display: block;
+                border-radius: 100%;
+                background-image: url(../img/icons/arrow.svg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                border: rem(1) solid rgba($purple, 0.2);
+                transform: scale(1);
+                transition: .3s;
+            }
+        }
+    }
+}
+.subscribe{
+    
+    &__bg{
+        background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+        padding: rem(76) rem(120);
+        
+    }
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        background-color: $blue;
+        border-radius: rem(16);
+        padding: rem(50) rem(48);
+        align-items: center;
+    }
+    &__info{
+        color: $white;
+        max-width: rem(350);
+        margin-right: rem(190);
+    }
+    &__title{
+        font-weight: 700;
+        font-size: rem(32);
+        line-height: 150%;
+        margin-bottom: rem(16);
+    }
+    &__text{
+        line-height: rem(28);
+    }
+    &__input{
+        padding-left: rem(48);
+        border-bottom: rem(2) solid $gray;
+        width: rem(403);
+        height: rem(38);
+        padding: 0;
+        margin-right: rem(48);
+        outline: none;
+        font-size: rem(16);
+        line-height: 150%;
+        background-color: $blue;
+        transition: .4s;
+        &::placeholder{
+            color: $white;
+        }
+        &:active, &:focus, &:hover{
+            border-bottom: rem(2) solid $color;
+        }
+        
+    }
+    &__button{
+        font-weight: 500;
+        font-size: rem(18);
+        line-height: 150%;
+        color: $color;
+        background-color: $white;
+        padding: rem(12) rem(32);
+        border-radius: rem(32);
+        border: rem(2) solid $blue;
+        transition: .3s;
+        &:hover{
+            background-color: $mainColor;
+            border: rem(2) solid $white;
+            color: $white;
+        }
+    }
+}
+
+
+//====================================================================================================
